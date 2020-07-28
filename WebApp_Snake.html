@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Snake Game</title>
+    <script src="logic.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="WebApp_Snake.CSS">
+  </head>
+  <body style="text-align: center;">
+
+
+ <!-- Section For Game Start and reset Button-->
+ <button class="intiateGame">Start_Game</button>
+ <br>
+ <br>
+ <br>
+ <!--Point Tally Reader of the Game -->
+ <div class="gamePoints"> Points Achieved:<span>0</span></div>
+ <br>
+ <br>
+ <br>
+ <!--Game Dimensions of Map-->
+ <div class="gameDimensions" style="text-align: center;">
+   <!--The below are the map dimenions mapped at 15*15 = 225  Divs Required-->
+
+   <div class="character"></div> <!--The class is for the playing avator-->
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+
+<!--30 Divs-->
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+<!--45 Divs-->
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+<!--60 Divs-->
+   <div></div>
+   <div></div>
+   <div class="object"></div> <!--This is the Object of the Game-->
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+<!--75 Divs-->
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+<!--90 Divs-->
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+<!--105 Divs-->
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+<!--120 Divs-->
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+<!--135 Divs-->
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+<!--150 Divs-->
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+<!--165 Divs-->
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+<!--180 Divs-->
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+
+<!--195 Divs-->
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+<!--210 Divs-->
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+<!--225 Divs-->
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+ </div>
+ 
+  
+ 
+ 
+ <!--<script scr="WebApp_Snake_BackEnd.js">
+
+</script>
+<script scr="WebApp_Snake_Logic.js">
+
+</script>
+<script scr="WebApp_Snake_Environment.js">
+  
+</script> -->
+  </body>
+</html>

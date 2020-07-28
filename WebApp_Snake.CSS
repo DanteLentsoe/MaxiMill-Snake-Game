@@ -1,0 +1,104 @@
+/*
+###################
+Game Grid Start
+###################
+*/
+
+div.gameDimensions
+{
+    margin-left: 25.6rem;
+    width: 650px;
+   height: 650px;
+   display: flex; /* This is used in order to ensure that the blocks fit accordings*/
+   flex-wrap: wrap;/* This is used in order to ensure that the blocks fit accordings*/
+   border-style: solid;
+
+}
+
+/* Code is targeting the map of the game 15*15 divs */
+
+div.gameDimensions div
+{
+
+ width:65px;
+ height: 65px;   
+
+}
+/*
+###################
+Game Grid End
+###################
+*/
+
+
+
+
+/*
+######################
+Character Design start
+######################
+*/
+
+div.character
+{
+background-color: #808000; /* Hue of the actual snake */
+}
+
+/*
+######################
+Character Design End
+######################
+*/
+
+
+
+
+
+
+
+/*
+######################
+Object Design Start
+######################
+*/
+
+div.object
+{
+    background-color: rgb(26, 73, 26);
+}
+
+/*
+######################
+Object Design End
+######################
+*/
+
+
+/*
+######################
+Responsive Design 
+######################
+*/
+
+/*@media screen and (min-width: 750px)
+{
+    div.gameDimensions
+    {
+        width: 350px;
+        height: 350px;
+        display: flex;
+    } 
+    
+    div.gameDimensions div
+    {
+width: auto;
+height: auto;
+    }
+}
+*/
+
+/*
+######################
+Responsive Design 
+######################
+*/
